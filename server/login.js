@@ -7,3 +7,10 @@
       
     }
   }
+
+
+
+  function loadingMain(){
+    var id = window.location.search.substr(5)
+    console.log(id)
+  }
