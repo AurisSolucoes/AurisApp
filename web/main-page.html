@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Auris - Transforme problemas em oportunidades.</title>
+  <link rel="stylesheet" href="../assets/templates/main-page.css">
+ </head>
+
+<body>
+  <input type="checkbox" id="menuAction" onclick="menuOpen()"/>
+  <header>
+    
+  <label class="menu" for="menuAction">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+    
+    <div class="logo-user">
+      <div id="logo"><img src="../assets//icons/logo.png" alt=""></div>
+      <div id="welcome">Olá, Caio Tavares.</div>
+    </div>
+    
+    <div class="notificacao">
+      <img src="../assets/icons/notificacao.png" alt="../assets/icons/notificacao.png">
+    </div>
+    
+    <div class="searchInApp">
+      <label for="searchApp" id="subtitleSearch">Busque a solução</label>
+      <input type="text" name="searchApp" id="searchApp" value="" />
+      <input type="button" name="goToSearch" id="goToSearch" value="" />
+    </div>
+  </header>
+  
+  
+  <nav class="menuNavBar">
+    <div class="optionDefault optionMenu1" id="optionPerfil" onclick="optionExpandLayout('perfil')">
+      
+    </div>
+    <div class="optionDefault optionMenu2" id="optionAjustes" onclick="optionExpandLayout('ajuste')">
+
+    </div>
+    <div class="optionDefault optionMenu3" id="optionHistorico" onclick="optionExpandLayout('historico')">
+
+    </div>
+    <div class="optionDefault optionMenu4" id="optionPagamento" onclick="optionExpandLayout('pagamento')">
+
+    </div>
+    <div class="optionDefault optionMenu5" id="optionMais" onclick="optionExpandLayout('mais')">
+
+    </div>
+  </nav>
+  
+  
+  
+  
+  
+   <footer>
+     
+   </footer>
+   <script type="text/javascript" charset="utf-8"  src="../componets/searchBar.js" ></script>
+   <script type="text/javascript" charset="utf-8" src="../componets/optionExpand.js"></script>
+   <script type="text/javascript" charset="utf-8" src="../componets/menuAction.js"></script>
+</body>
+</html>

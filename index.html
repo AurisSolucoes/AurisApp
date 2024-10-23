@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">        
+  <link rel="stylesheet" href="assets/templates/login.css">
+  <title>Auris - Trasnforme problemas em oportunidades.</title>
+</head>
+<body>
+    <header class="header">
+      <img src="assets/icons/logo.png" alt="Auris" style="width: 250px; height: 150px; margin-left: -50px; margin-top: -50px;">
+      <h2>Transformando problemas em oportunidades</h2>
+    </header>
+    
+    
+    <div class="banner">
+      <img src="./assets/images/wave-top.svg" alt="" id="wavetop">
+      <img src="../assets/images/bancada.webp" alt="" id="wallpaper">
+      <img src="./assets/images/wave-bottom.svg" alt="" id="wavebottom">
+    </div>
+   
+    
+    
+    
+    <article class="login">
+      
+      <form action="#" id="login-formario">
+       <label for="user-email" id="tag">E-mail</label>
+       <input type="email" id="user-email" pattern=".+@gmail\.com"
+title="Adicione um email valido." max="64">
+      </form>
+      <input type="submit" id="login" value="Continuar com e-mail" onclick="loginTest()">
+      
+      <div class="login-paralelo">
+        
+        <div class="divisor">
+          <div></div> Outras opções de login<div></div>
+        </div>
+        
+        <section class="midias-sociais">
+          <input type="button" id="facebook">
+          <input type="button" id="google">
+          <input type="button" id="registre"> 
+        </section>
+        
+      </div>
+      
+      
+    </article>
+    
+    <footer class="footer">
+      <p>Ao clicar em Continuar para se cadastrar ou entrar, você aceita o <a href="#">Contrato do Usuário</a>, a <a href="#">Politíca de Privacidade</a> e a <a href="#">Politíca de Cookies</a> do Auris.</p>
+    </footer>
+    
+    
+    <script src="componets/script/login.js"></script>
+    <script src="./server/login.js"></script>
+</body>
+</html>

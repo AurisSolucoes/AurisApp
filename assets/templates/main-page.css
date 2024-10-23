@@ -1,0 +1,180 @@
+  
+  @import url('../fonts/logo.css');
+  @import url('../css/default.css');            
+  
+  
+  
+  * {
+    padding:0;
+    margin: 0;
+  }
+  
+  body {
+    background: #F9EEEE;
+  }
+  
+  
+  header {
+    width: 100vw;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  
+  header > .menu {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
+    margin-top: 25px;
+    justify-content: center;
+  }
+  header > .menu > div {
+    width: 30px;
+    height: 3.64px;
+    background: var(--cor-principal);
+    border-radius: 20px;
+    transition: all .4s;
+  }
+    header > .menu > div:nth-child(3) {
+      width: 25px;
+    }
+  
+  header > .logo-user {
+    text-align: center;
+    line-height: 80px;
+  }
+  
+  header > .logo-user > #logo > img {
+    width: 170px;
+    margin-top: -10px;
+  }
+  
+  header > .logo-user > #welcome {
+    font-family: var(--font-primaria);
+    margin-top:-85px;
+    font-size: 1em;
+    font-weight: 100;
+  }
+  
+
+  .notificacao > img {
+    width: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  
+  .searchInApp {
+    position: absolute;
+    width: 90vw;
+    height: 50px;
+    background: white;
+    left: 5vw;
+    top: 13vh;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    border-radius: 5px;
+    
+  }
+  .searchInApp > input {
+    max-height: 35px;
+    margin-top: 15px;
+    background: none;
+    border: none;
+  }
+  .searchInApp > #searchApp {
+    text-indent: 1em;
+    font-size: 1em;
+    font-family: var(--font-primaria);
+    color: var(--cor-principal);
+  }
+    #searchApp:focus {
+      outline: none;
+    }
+  .searchInApp > label {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    transition: all .5;
+  }
+  
+  #goToSearch {
+    border-radius: 0px;
+    margin-top: 8px;
+    background: url('../icons/search-interface-symbol.png');          
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 50% 50%;
+  }
+  
+  .menuNavBar {
+    display: grid;
+    left: -100vw;
+    position: absolute;
+  }
+  
+  
+  .optionMenu1 {
+    grid-area: perfil;
+  }
+  .optionMenu2 {
+    grid-area: ajustes;
+  }
+  .optionMenu3 {
+    grid-area: historico;
+  }
+  .optionMenu4 {
+    grid-area: pagamento;
+  }
+  .optionMenu5 {
+    grid-area: mais;
+  }
+  
+  .optionDefault {
+    background: #003366;
+    border-radius: 10px;
+    min-height: 150px;
+    transition: all .8s;
+  }
+  
+  
+  .menuNavBar {
+    width: 95vw;
+    height: 70vh;
+    background: #f9eeee;
+    position: absolute;
+    top: 20vh;
+    padding: 2vw;
+    transition: all .8s;
+    gap: 8px;
+    grid-template-areas:"perfil perfil perfil"
+     "ajustes ajustes historico"
+     "pagamento pagamento pagamento"
+     "mais mais mais";
+  }
+  
+  
+  #menuAction {
+    display: none;
+  }
+  
+  #menuAction:checked ~ header > .menu > div:nth-child(1){
+    transition: all .4s;
+    transform: rotate(-135deg);
+  }
+  #menuAction:checked~ header > .menu>div:nth-child(2) {
+  transition: all .4s;
+  transform: rotate(135deg);
+  margin-top: -8px;
+}
+#menuAction:checked~ header > .menu>div:nth-child(3) {
+  transition: all .4s;
+  display: none;
+}
+
+#menuAction:checked ~ .menuNavBar { 
+   left: 0px;
+}

@@ -1,0 +1,208 @@
+  
+  @import url('../css/default.css');
+  @import url('../fonts/logo.css');
+  
+  
+  /* android view */
+  @media (max-width: 768px){
+  
+  h1 {
+    color: var(--cor-principal);
+    font-family: var(--font-primaria);               
+    font-size: 3em;
+    margin-left: 5vw;
+  }
+  h2 {
+    font-weight: 100;
+    font-family: var(--font-primaria);
+    font-size: .8em;
+    margin-left: 5vw;
+    margin-top: -6vh;
+    font-weight: 100;
+  }
+  
+  
+  .banner {
+    position: absolute;
+    width: 100vw;
+    height: 35vh;
+    left:0px;
+  }
+  
+  .banner > #wallpaper {
+    width: 100%;
+    height: 100%;
+    
+    z-index: 5;
+  }
+  
+  .banner > #wavetop {
+    width: 102vw;
+    position: absolute;
+    margin-left: -1vw;
+    z-index: 10;
+    filter: blur(3px);
+    margin-top: -9px;
+  }
+ 
+  .banner > #wavebottom {
+    width: 102vw;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: -101vw;
+    z-index: 10;
+    filter: blur(3px);
+  }
+  
+  article {
+    width: 100vw;
+    min-height: 50vh;
+  }
+  
+  article > form {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    width: 80vw;
+    height: 50px;
+    transform: translate(-50%, -50%);   
+    background: white;
+    border: 1px solid var(--cor-principal);
+    font-weight: 900;
+    font-family: arial;
+  }
+  
+  article > form > label {
+    position: absolute;
+    color: black;
+    left: 15px;
+    font-size: .8em;
+    top: 35%;
+    transition: all .3s;
+  }
+  
+  article > form > label:active {
+    position: absolute;
+    top:-10%;
+  }
+  
+  article > form > input {
+    background: none;
+    border: none;
+  }
+  
+  article > form > #user-email {
+    text-indent: 10px;
+    font-size: 1em;
+    height: 60%;
+    width: 95%;
+    margin-top: 10px;
+  }
+  article > form > #user-email:focus {
+    outline: none;
+    border: none;
+    text-indent: 10px;
+  }
+  
+  #login {
+    position: absolute;
+    width: 82vw;
+    height: 45px;
+    background:var(--cor-principal) url('../icons/o-email-br.png');           
+    background-size: 7%;
+    background-repeat: no-repeat;
+    background-position: 15% 50%;
+    font-size: 1em;
+    color: white;
+    left: 50%;
+    top: 68%;
+    border-radius: 0px;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  article > div {
+    width: 90vw;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  article > div > hr {
+    width: 40vw;
+  }
+
+.divisor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-family: arial;
+  color: rgba(0,0,0,0.5);
+  font-size: 13px;
+}
+
+.divisor > div {
+  width: 25%;
+  height: 1px;
+  background: rgba(0,0,0,0.5);
+}
+  
+  .midias-sociais {
+  width: 60%;
+  height: 40px;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: -30px;
+  }
+  
+  #facebook {
+  width: 35px;
+  height: 35px;
+  background: url('../icons/facebook.png') no-repeat 50% 50%;     
+  background-size: 100%;
+  }
+  #google {
+  width: 35px;
+  height: 35px;
+  background: url('../icons/google.png') no-repeat 50% 50%;
+  background-size: 100%;
+  }
+  #registre {
+  width: 35px;
+  height: 35px;
+  background: url('../icons/novo-usuario.png') no-repeat 50% 50%;
+  background-size: 100%;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0px;
+    width: 90vw;
+    text-align: center;
+    left: 5vw;
+    font-size: .8em;
+    font-family: arial;
+  }
+  
+  }
+  
+  
+  /* PC view */
+  
+  
+  @media (min-width: 767px){
+    
+    body {
+      display: none;
+    }
+    
+    
+    
+  }
