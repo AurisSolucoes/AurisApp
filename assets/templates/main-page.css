@@ -99,6 +99,7 @@
     left: 10px;
     top: 15px;
     transition: all .5;
+    font-family: var(--font-primaria);
   }
   
   #goToSearch {
