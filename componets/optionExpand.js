@@ -53,5 +53,5 @@
           // Tab to edit
       }
       
-      console.log(optionsGroup.perfil[1])
+      
     }        

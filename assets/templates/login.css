@@ -191,6 +191,10 @@
     font-family: arial;
   }
   
+  .onlyPC {
+    display: none;
+  }
+
   }
   
   
@@ -202,6 +206,7 @@
     body {
       display: none;
     }
+    
     
     
     

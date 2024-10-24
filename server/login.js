@@ -1,16 +1,36 @@
   
-  
+
+
+var usersActives = [{
+  name : 'Caio Tavares',
+  email : 'caiotav.lima21@gmail.com',
+  uid : 'ADLYWIIzpsC9qfz'
+},{
+ name : 'Igor Ribeiro',
+ email : 'igorr2244@outlook.com',
+ uid : 'WGiEwBXPqUoGkb'
+},{
+  name : 'Isadora Candido',
+  email : 'amor',
+  uid : 'WGiEwCEIqUoGkb'
+ }]
+
   function loginTest(){
     var email = document.getElementById("user-email");          
-    if (email.value == "caiotav.lima21@gmail.com") {
-      window.location.href = "../web/main-page.html?uid=onai03tnoaID"
-      
+    for(i in usersActives){
+      if(usersActives[i].email == email.value){
+        window.location.href = './web/main-page.html?' + usersActives[i].uid;
+      }
     }
   }
 
 
 
-  function loadingMain(){
-    var id = window.location.search.substr(5)
-    console.log(id)
+  function loadHome(){
+    var welcome = document.getElementById("welcome")
+    var uid = window.location.search.substring(1);
+    for(i in usersActives){
+      if(usersActives[i].uid == uid)
+        welcome.innerHTML = "Olá, " + usersActives[i].name;
+    }
   }
