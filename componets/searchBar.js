@@ -6,7 +6,7 @@
     searchBox.addEventListener("focus", () => {
       subtitleBox.style.fontSize = "0.8em"
       subtitleBox.style.transition = "all .3s"
-      subtitleBox.style.marginTop = "-12px"
+      subtitleBox.style.marginTop = "-10px"
     })
     searchBox.addEventListener("blur", () => {
       if(searchBox.value == ""){
