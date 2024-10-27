@@ -1,0 +1,167 @@
+
+
+  input:focus {
+    outline: none;
+    box-sizing: border-box;
+  }
+
+
+
+  .cabecalho-inicio {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    justify-content: center;
+   
+  }
+
+  .menu-perfil {
+    width: 80vw;
+    height: 35px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 5%;
+    background: white;
+  }
+   .menu {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    align-items: center;
+    gap: 3px;
+    margin-left: 5%;
+    margin-top: 5%;
+   }
+    .menu > div:nth-child(1) {
+      width: 30px;
+      height: 5px;
+      background: black;
+      border-radius: 5px;
+      transition: all .5s;
+    }
+      .girarLinhaUm {
+        transform: rotate(130deg);
+        transition: all .5s;
+       margin-top: 5px;
+      }
+
+    .menu > div:nth-child(2) {
+      width: 30px;
+      height: 5px;
+      background: black;
+      border-radius: 5px;
+      transition: all .5s;
+    }
+      .girarLinhaDois {
+        transform: rotate(-130deg);
+        transition: all .5s;
+        margin-top: -20px;
+        
+      }
+    
+    .menu > div:nth-child(3) {
+      width: 20px;
+      height: 5px;
+      background: black;
+      border-radius: 5px;
+      transition: all .5s;
+    }
+      .desativarLinhaTres {
+        display: none;
+      }
+
+  .foto-de-perfil {
+    width: 40px;
+    height: 40px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.25);
+    right: 10vw;
+    top: 2%;
+    border-radius: 5px;
+    position: absolute;
+    background: url('../images/pefil/perfil.jpg') no-repeat;
+    background-size: 100%;
+  }
+
+  .boas-vindas {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin-top: 5%;
+  }
+
+  .buscar {
+    width: 80vw;
+    height: 50px;
+    display: grid;
+    grid-template-columns:5fr 1fr;
+    background: #f9eeee;
+    border-radius: 10px;
+  }
+  .buscar > label {
+    position: absolute;
+    margin-left: 1em;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #111;
+    transition: .5s all;
+  }
+    .ativo {
+      font-size: 10px!important;
+      margin-top: 5px!important;
+      transition: .5s all;
+    }
+   .caixa-de-busca {
+    height: 40px;
+    margin-top: 10px;
+    text-indent: 1em;
+    background: none;
+    border: none;
+    border-radius: 0px 0px 0px 10px;
+   }
+   .botao-de-busca {
+    background: url('../images/icons/buscar.png') no-repeat;
+    background-size: 18px;
+    background-position: 50% 60%;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+   }
+
+
+
+   .menu-categorias > ul {
+    width: 95vw;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 8px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    list-style-type: none;
+    margin-left: 2.5vw;
+   }
+
+   .menu-categorias > ul > li {
+    height: 40px; 
+    line-height: 40px;
+    padding-left:20px;
+    padding-right: 20px;
+     max-width: 100px;
+     background: blue;
+     border-radius: 5px;
+     color: white;
+      font-family: Arial, Helvetica, sans-serif;
+     font-weight: 550;  
+     
+   }    
+   .menu-categorias > ul > li:hover {
+    box-shadow: 0px 0px 0px 3px blue;
+    transition: .5s all;
+   }
+
+
+   .feed {
+    width: 90vw;
+    margin-left: 5vw;
+    min-height: 190vw;
+   }

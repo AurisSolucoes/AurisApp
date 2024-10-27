@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="./assets/style/pagina-de-login.css">
+    <link rel="stylesheet" href="./assets/style/registar.css">
+    <link rel="stylesheet" href="./assets/style/inicio.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="./assets/componentes/menu.js"></script>
+    <title>Auris - Transformando problemas em oportunidades.</title>
+</head>
+<body ng-app="App">
+  
+    <div ng-view></div>
+    <script src="./app.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBQcHJg_cf51tGy5jGJ6XgtsSP3rGe1yrM",
+          authDomain: "auris-50c00.firebaseapp.com",
+          projectId: "auris-50c00",
+          storageBucket: "auris-50c00.appspot.com",
+          messagingSenderId: "950721347512",
+          appId: "1:950721347512:web:5acf72793438418219d94d",
+          measurementId: "G-27RWXGQ36Y"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+   
+</body> 
+</html>

@@ -1,0 +1,124 @@
+
+
+    
+
+
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+
+
+
+    input {
+        height: 50px;
+    }
+    input:focus {
+        outline: none;
+    }
+
+
+
+    .cabecalho {
+        width: 100vw;
+        height: 30vh;
+        background-color: #FFF;
+    }
+    .logotipo {
+        width: 100px; 
+        margin-left: 8vw; 
+        margin-top: 50px;
+    }
+
+    .formulario-de-login {
+        width: 100vw;
+        height: 70vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        font-family: arial;
+        gap: 20px;
+    }
+
+    .formulario-de-login > h1 {
+        padding-top: 10%;
+        font-size: 24pt;
+        font-weight: 900;
+        padding-bottom: 20px;
+    }
+        .caixa-de-email {
+            width: 85vw;
+            background: url('../images/icons/email.png') no-repeat;
+            background-size: 20px;
+            background-position: 1em 50%;
+            text-indent: 4em;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+
+        .conjunto-da-senha {
+            width: 85vw;
+            display: grid;
+            grid-template-columns: 5fr 1fr;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+    
+    .caixa-da-senha {
+        border: none;
+        text-indent: 4em;
+        border-radius: 0;
+        background: url('/assets/images/icons/senha.png') no-repeat;
+        background-size: 20px;
+        background-position: 1em 50%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+    
+    .descobrir-senha {
+            background: url('/assets/images/icons/ocutar.png') no-repeat;
+            background-size: 20px;
+            background-position: 50% 50%;
+        }
+    
+    .botao-de-login {
+        background: #2338dd;
+        color: white;
+        font-size: 15px;
+        border-radius: 15px;
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+    .senha-esquecida {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: right;
+        font-weight: 700;
+        color: #2338dd;
+    }
+    .ou {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.20);
+    }
+    .login-google {
+        width: 85vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        background: url('/assets/images/icons/google.png') no-repeat;
+        background-size: 20px;
+        background-position: 20% 50%;
+        border: 0.5px solid rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        color: black;
+    }
+    .chamada-registrar {
+        text-align: center;
+        color: #2338dd;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        padding-bottom: 10%;
+    }
