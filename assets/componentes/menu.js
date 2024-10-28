@@ -1,5 +1,5 @@
 
-    var menuAberto = false;
+    var menuAberto = true;
 
     function abrirMenu(){
        var linhaUm = document.querySelector('.menu-linha-um') 
@@ -16,7 +16,22 @@
             linhaTres.classList.remove("desativarLinhaTres")
             menuAberto = false;
         }
+
+        //menuLabel
+
+        var menuLabel = document.getElementById("menu_navegador")
+        if(menuAberto){
+            menuLabel.style.left = "0vw"
+        } else {
+            menuLabel.style.left = "-100vw"
+        }
+        
+        
+        
+
     }
+
+    
 
     
    
@@ -34,3 +49,6 @@
         }
 
     }
+
+
+

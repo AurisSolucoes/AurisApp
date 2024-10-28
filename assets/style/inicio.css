@@ -125,10 +125,13 @@
     border-radius: 0px 10px 10px 0px;
    }
 
-
+  .menu-categorias {
+    width: 100vw;
+  
+  }
 
    .menu-categorias > ul {
-    width: 95vw;
+    width: 100vw;
     height: 70px;
     display: flex;
     flex-direction: row;
@@ -138,24 +141,26 @@
     overflow-x: scroll;
     overflow-y: hidden;
     list-style-type: none;
-    margin-left: 2.5vw;
-   }
+    
+  }
 
    .menu-categorias > ul > li {
     height: 40px; 
     line-height: 40px;
     padding-left:20px;
     padding-right: 20px;
-     max-width: 100px;
      background: blue;
      border-radius: 5px;
      color: white;
       font-family: Arial, Helvetica, sans-serif;
      font-weight: 550;  
-     
+     white-space: nowrap;
+    transition: .5s all; 
    }    
-   .menu-categorias > ul > li:hover {
-    box-shadow: 0px 0px 0px 3px blue;
+   .menu-categorias > ul > li:active {
+    background: white;
+    color: blue;
+    
     transition: .5s all;
    }
 
@@ -164,4 +169,80 @@
     width: 90vw;
     margin-left: 5vw;
     min-height: 190vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-top: 50px;
+    overflow-y: scroll;
+
    }
+    .card {
+      width: 90vw;
+      height: 200px;
+      background: #f9eeee;
+      border-radius: 10px;
+    }
+
+    .menu-navegador {
+      width: 100vw;
+      height: 70vh;
+      background: white;
+      position: absolute;
+      z-index: 10;
+      top: 30vh;
+      left: 0vw;
+      transition: linear .5s;
+      
+    }
+
+    .menu-nav {
+      width: 80vw;
+      list-style:none;
+      float:left;
+      display: grid;
+      grid-template-rows: repeat(2,1fr);
+      font-family: Arial, Helvetica, sans-serif;
+      margin-left: 10vw;
+      font-weight: 800;
+      
+    }
+
+    
+
+    .menu-nav  li a:hover{
+      background:blue;
+      color:#fff;
+
+      }
+
+      .menu-nav li a{ 
+        color:blue;
+        text-decoration:none;
+        padding: 20px 20px;
+        display:block;
+        border-radius: 10px;
+          }
+
+      .menu-nav li  ul{
+        position:absolute;
+        top: 12%;
+        width: 70vw;
+        left:15vw;
+        background-color:#fff;
+        display:none;
+        transition: linear .5s;
+        }
+    
+        .menu-nav li:hover ul, .menu-nav li.over ul{display:block;}
+
+        .menu-nav li ul li{
+          color: blue;
+          display:block;
+          width:70vw;
+          height: 40px;
+          line-height: 40px;
+          text-indent: 3em;
+          margin-top: 5px;
+          transition: linear .5s;
+          }
