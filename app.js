@@ -10,7 +10,7 @@
             templateUrl : "/web/registrar.html"
         })
         .when("/home", {
-            templateUrl : "/web/home.html"
+            templateUrl : "/web/home.html" + ""
         })
         .otherwise({redirectTo: '/'})
     })
