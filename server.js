@@ -37,11 +37,8 @@
               if(usuarios[i].email == emailDoUsuario.value && usuarios[i].senha == senhaDoUsuario.value){
                 window.location.href  = '#home';
 
-                var usuarioCaixa = document.querySelector("#usuario-caixa");
-
-               
+                var usuarioCaixa = document.querySelector("#usuario-caixa")
                 usuarioCaixa.innerHTML = "Ola, " + usuarios[i].nome
-                console.log(usuarios[i].foto_perfil)
               }
            }
             
