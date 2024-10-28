@@ -163,7 +163,7 @@
      white-space: nowrap;
     transition: .5s all; 
    }    
-   .menu-categorias > ul > li:active {
+   .menu-categorias > ul > li:hover {
     background: white;
     color: blue;
     
